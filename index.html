@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitória Teixeira Souza | Estatística</title>
+<meta name="description" content="Portfólio de Vitória Teixeira Souza, estudante de Estatística. Um case sobre o que a média esconde nos salários da PNAD Contínua.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#4A1226;--pink:#EA4C75;--yellow:#FCC261;--paper:#FFF4EF;--blush:#FDE0DA}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.125rem/1.65 'DM Sans',system-ui,sans-serif}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:900;line-height:1.05;margin:0 0 .5em}
+h1{font-size:clamp(2.8rem,8vw,5.5rem);color:var(--pink)}
+h2{font-size:clamp(2rem,5vw,3.2rem);color:var(--pink)}
+h3{font-size:1.5rem;font-weight:600}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--ink);text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:4px}
+a:focus-visible,[tabindex]:focus-visible{outline:4px solid var(--ink);outline-offset:3px}
+.skip{position:absolute;left:-999px;background:var(--ink);color:var(--paper);padding:.6rem 1rem}
+.skip:focus{left:1rem;top:1rem;z-index:9}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+header.top{padding:1.2rem 0}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem}
+.logo{font:900 1.4rem 'Fraunces',Georgia,serif;text-decoration:none}
+nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{font-weight:600}
+.flower{position:absolute;pointer-events:none}
+.hero{position:relative;overflow:hidden;padding:3rem 0 5rem}
+.hero .wrap{position:relative;z-index:1}
+.hero .f1{width:min(46vw,380px);right:-60px;top:-30px;color:var(--pink)}
+.hero .f2{width:min(26vw,190px);right:22%;bottom:-40px;color:var(--yellow)}
+.hero .lead{font:600 clamp(1.4rem,3.2vw,2rem)/1.3 'Fraunces',Georgia,serif;max-width:22ch;margin:0 0 1rem}
+.hero .small{margin:0 0 .3rem;font-weight:600}
+section{padding:4.5rem 0}
+.band{background:var(--yellow)}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2rem}
+.num{background:var(--paper);border:3px solid var(--ink);border-radius:28px 28px 28px 6px;padding:1.5rem}
+.num b{display:block;font:900 2.6rem/1 'Fraunces',Georgia,serif;margin-bottom:.4rem}
+.num p{font-size:1rem;margin:0}
+.case h3{margin-top:2.2rem;color:var(--pink)}
+.case .field p,.case li{max-width:68ch}
+ul.limits{padding-left:1.2rem}
+figure{margin:1.5rem 0;background:var(--blush);padding:1.2rem;border-radius:24px}
+figcaption{font-size:1rem;margin-top:.6rem}
+.scroll{overflow-x:auto}
+svg text{font:600 16px 'DM Sans',sans-serif;fill:var(--ink)}
+.ph{background:var(--yellow);border:2px dashed var(--ink);padding:.5rem .8rem;border-radius:10px;display:inline-block;max-width:68ch}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:2rem}
+.how h3{color:var(--ink)}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:.9rem 1.6rem;border-radius:999px;font-weight:700;text-decoration:none}
+.btn:hover{background:var(--pink)}
+footer{padding:2rem 0 3rem;font-size:1rem}
+@media (max-width:640px){section{padding:3rem 0}.hero .f2{display:none}.hero .f1{opacity:.9;top:-60px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="fl" viewBox="-50 -50 100 100"><g fill="currentColor"><ellipse cx="0" cy="-26" rx="18" ry="24"/><ellipse cx="0" cy="-26" rx="18" ry="24" transform="rotate(72)"/><ellipse cx="0" cy="-26" rx="18" ry="24" transform="rotate(144)"/><ellipse cx="0" cy="-26" rx="18" ry="24" transform="rotate(216)"/><ellipse cx="0" cy="-26" rx="18" ry="24" transform="rotate(288)"/></g><circle r="10" fill="#FFF4EF"/></symbol></svg>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header class="top"><div class="wrap"><a class="logo" href="#topo">Vitória</a>
+<nav aria-label="Principal"><ul><li><a href="#numeros">Números</a></li><li><a href="#case">Case</a></li><li><a href="#trabalho">Como eu trabalho</a></li><li><a href="#formacao">Formação</a></li><li><a href="#contato">Contato</a></li></ul></nav></div></header>
+<main id="main">
+<section class="hero" id="topo">
+<svg class="flower f1" aria-hidden="true" focusable="false"><use href="#fl"/></svg>
+<svg class="flower f2" aria-hidden="true" focusable="false"><use href="#fl"/></svg>
+<div class="wrap">
+<p class="small">Oi, eu sou a</p>
+<h1>Vitória Teixeira Souza</h1>
+<p class="lead">Antes de rodar o modelo, eu pergunto o que a média está escondendo.</p>
+<p>Estudo Estatística na UFJF. Meu trabalho mais recente usou 181.704 registros da PNAD Contínua para mostrar que o diploma superior se associa a diferenças de salário bem maiores no topo da distribuição do que na base.</p>
+<p><a class="btn" href="#case">Ler o case</a></p>
+</div></section>
+
+<section class="band" id="numeros"><div class="wrap">
+<h2 style="color:var(--ink)">Números que consigo defender</h2>
+<p>Todos vêm do mesmo trabalho, e cada um vem com o limite dele.</p>
+<div class="nums">
+<div class="num"><b>181.704</b><p>pessoas na amostra da PNAD Contínua 2025. Os pesos e o plano amostral não entraram na inferência, então os resultados valem para a amostra, não para a população.</p></div>
+<div class="num"><b>0,802 a 1,311</b><p>coeficiente de Superior completo nos quantis 0,10 e 0,90. A diferença entre eles deu 0,509 (IC 95%: 0,431 a 0,587). É associação condicional, não efeito causal.</p></div>
+<div class="num"><b>21 de 21</b><p>pares de escolaridade com diferença significativa na ANOVA de Welch com Games-Howell. Com uma amostra desse tamanho, significância sozinha diz pouco.</p></div>
+</div></div></section>
+
+<section class="case" id="case"><div class="wrap">
+<h2>A média dizia que o diploma vale muito. Os quantis mostraram para quem.</h2>
+<div class="field"><h3>Contexto</h3>
+<p>Na disciplina de métodos estatísticos, a atividade avaliativa pedia uma análise de dados com algum método visto em aula. Fiz sozinha, com a PNAD Contínua 2025: rendimento por hora, escolaridade em sete níveis, sexo e idade. A turma estava concentrada em ANOVA.</p>
+<p class="ph">[ADICIONE: quanto tempo durou e quem avaliou]</p></div>
+<div class="field"><h3>Problema</h3>
+<p>A ANOVA clássica apontou diferença entre os níveis de escolaridade, mas os diagnósticos reprovaram as premissas dela: variâncias desiguais (Brown-Forsythe = 615,4) e resíduos longe da normal (Jarque-Bera = 38.681). Troquei pela ANOVA de Welch e rodei Games-Howell. Todas as 21 comparações deram p &lt; 0,001.</p>
+<p>Com quase 182 mil observações, quase qualquer diferença sai significativa. A pergunta que faltava: a vantagem do diploma é a mesma para quem ganha pouco e para quem ganha muito?</p></div>
+<div class="field"><h3>Decisão difícil</h3>
+<p>A Welch já resolvia o problema que os diagnósticos levantaram, e eu podia ter entregado ali. Segui para a regressão quantílica, método que conheci estudando uma dissertação, enquanto a turma trabalhava com ANOVA. Estimei três modelos nos quantis 0,10, 0,50 e 0,90 (só escolaridade; com sexo; com sexo e idade) e testei a diferença entre o 0,10 e o 0,90 por bootstrap, com 500 réplicas.</p>
+<p>O custo foi aprender o método no meio da tarefa, com uma base grande e muito variável.</p>
+<p class="ph">[ADICIONE: o que te fez continuar depois da Welch, e que alternativas você considerou]</p></div>
+<div class="field"><h3>Resultado</h3>
+<p>No modelo final, o coeficiente de Superior completo sobe de 0,802 no quantil 0,10 para 1,311 no quantil 0,90. Pela conversão 100 × (e<sup>β</sup> − 1), isso dá cerca de 123% a mais na base e 271% a mais no topo, em relação a quem tem Fundamental completo. Sem instrução faz o caminho inverso: a desvantagem é maior na base (−0,787) do que no topo (−0,444). O coeficiente de sexo feminino é negativo em todos os quantis e aumenta em módulo no topo (−0,175 a −0,232), padrão compatível com teto de vidro, que esses dados não permitem afirmar.</p>
+<figure><div class="scroll" tabindex="0" role="region" aria-label="Gráfico de coeficientes por quantil">
+<svg viewBox="0 0 700 280" width="100%" style="min-width:600px" role="img" aria-label="Coeficientes do modelo final nos quantis 0,10, 0,50 e 0,90. Superior completo sobe de 0,802 para 1,311. Sem instrução vai de menos 0,787 para menos 0,444, ou seja, a desvantagem diminui no topo.">
+<line x1="40" x2="660" y1="152" y2="152" stroke="#4A1226" stroke-dasharray="6 6"/><text x="44" y="144">sem diferença (0)</text>
+<polyline points="100,81 330,66 560,37" fill="none" stroke="#EA4C75" stroke-width="5"/>
+<polyline points="100,221 330,203 560,191" fill="none" stroke="#4A1226" stroke-width="4" stroke-dasharray="10 6"/>
+<g fill="#EA4C75" stroke="#4A1226" stroke-width="2"><circle cx="100" cy="81" r="8"/><circle cx="330" cy="66" r="8"/><circle cx="560" cy="37" r="8"/></g>
+<g fill="#FFF4EF" stroke="#4A1226" stroke-width="3"><rect x="92" y="213" width="16" height="16"/><rect x="322" y="195" width="16" height="16"/><rect x="552" y="183" width="16" height="16"/></g>
+<text x="100" y="62" text-anchor="middle">0,802</text><text x="330" y="47" text-anchor="middle">0,975</text><text x="560" y="18" text-anchor="middle">1,311</text>
+<text x="100" y="252" text-anchor="middle">−0,787</text><text x="330" y="234" text-anchor="middle">−0,577</text><text x="560" y="222" text-anchor="middle">−0,444</text>
+<text x="580" y="40">Superior</text><text x="580" y="58">completo</text><text x="580" y="195">Sem</text><text x="580" y="213">instrução</text>
+<text x="100" y="276" text-anchor="middle">quantil 0,10</text><text x="330" y="276" text-anchor="middle">quantil 0,50</text><text x="560" y="276" text-anchor="middle">quantil 0,90</text>
+</svg></div>
+<figcaption>O diploma superior pesa mais no topo da distribuição; a falta de instrução pesa mais na base. Coeficientes em log do rendimento-hora, referência: Fundamental completo.</figcaption></figure>
+<h3 style="font-size:1.25rem;color:var(--ink)">O que esta análise não prova</h3>
+<ul class="limits">
+<li>São associações condicionais em dados transversais. Nada aqui mede efeito causal.</li>
+<li>Mantive peso, estrato e UPA no banco, mas a inferência não os usa.</li>
+<li>Vi os quantis se cruzando e não tratei isso no trabalho.</li>
+<li>Ficaram de fora setor de atividade, raça e região.</li>
+</ul>
+<p class="ph">[ADICIONE: nota ou retorno do professor, e se alguém usou o trabalho]</p></div>
+<div class="field"><h3>O que eu faria diferente</h3>
+<p>Enfrentei a base sozinha. Hoje acho que um grupo teria levantado questionamentos que eu não fiz.</p>
+<p class="ph">[CONFIRME: o que você refaria na análise. Por exemplo, incorporar o plano amostral e checar o cruzamento dos quantis]</p></div>
+</div></section>
+
+<section class="band" id="trabalho"><div class="wrap">
+<h2 style="color:var(--ink)">Como eu trabalho</h2>
+<div class="how">
+<div><h3>Pergunto o que a média esconde</h3><p>Depois da Welch, o trabalho já tinha uma resposta correta. Fui atrás da pergunta seguinte, sobre como o efeito muda ao longo da distribuição.</p></div>
+<div><h3>Aprendo o método que a pergunta pede</h3><p>Conheci a regressão quantílica em uma dissertação e a usei no mesmo trabalho, com uma base de 181 mil linhas.</p></div>
+<div><h3>Escrevo o limite junto com o resultado</h3><p>Onde os dados sugeriam teto de vidro, escrevi que eles não permitem afirmar isso. O plano amostral não usado aparece na seção de limitações.</p></div>
+</div></div></section>
+
+<section id="formacao"><div class="wrap">
+<h2>Formação</h2>
+<p>Estatística, UFJF.</p>
+<p class="ph">[ADICIONE: ano de entrada, disciplinas relevantes, monitoria, iniciação científica, extensão, empresa júnior e ferramentas que você realmente usa]</p>
+</div></section>
+
+<section class="band" id="fora"><div class="wrap">
+<h2 style="color:var(--ink)">Fora da faculdade</h2>
+<p class="ph">[ADICIONE: 3 a 5 detalhes que mostrem quem você é fora do currículo]</p>
+</div></section>
+
+<section id="contato"><div class="wrap">
+<h2>Contato</h2>
+<p>Se algo aqui combina com o que você procura, escreve para mim.</p>
+<p><a class="btn" href="mailto:vitoria.teixeira@estudante.ufjf.br">vitoria.teixeira@estudante.ufjf.br</a></p>
+<p class="ph">[ADICIONE: LinkedIn, GitHub ou outro canal]</p>
+</div></section>
+</main>
+<footer><div class="wrap">Vitória Teixeira Souza</div></footer>
+</body>
+</html>
